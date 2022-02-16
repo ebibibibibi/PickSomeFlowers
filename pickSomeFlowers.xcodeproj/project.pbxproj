@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		803B5FB727BCAD2900973DB3 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FB627BCAD2900973DB3 /* Tests_iOS.swift */; };
+		803B5FB927BCAD2900973DB3 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FB827BCAD2900973DB3 /* Tests_iOSLaunchTests.swift */; };
+		803B5FC327BCAD2900973DB3 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FC227BCAD2900973DB3 /* Tests_macOS.swift */; };
+		803B5FC527BCAD2900973DB3 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FC427BCAD2900973DB3 /* Tests_macOSLaunchTests.swift */; };
+		803B5FC627BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */; };
+		803B5FC727BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */; };
+		803B5FC827BCAD2900973DB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9F27BCAD2700973DB3 /* ContentView.swift */; };
+		803B5FC927BCAD2900973DB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9F27BCAD2700973DB3 /* ContentView.swift */; };
+		803B5FCA27BCAD2900973DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803B5FA027BCAD2800973DB3 /* Assets.xcassets */; };
+		803B5FCB27BCAD2900973DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803B5FA027BCAD2800973DB3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		803B5FB327BCAD2900973DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 803B5F9927BCAD2700973DB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 803B5FA427BCAD2900973DB3;
+			remoteInfo = "pickSomeFlowers (iOS)";
+		};
+		803B5FBF27BCAD2900973DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 803B5F9927BCAD2700973DB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 803B5FAA27BCAD2900973DB3;
+			remoteInfo = "pickSomeFlowers (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickSomeFlowersApp.swift; sourceTree = "<group>"; };
+		803B5F9F27BCAD2700973DB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		803B5FA027BCAD2800973DB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		803B5FA527BCAD2900973DB3 /* pickSomeFlowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickSomeFlowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		803B5FAB27BCAD2900973DB3 /* pickSomeFlowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickSomeFlowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		803B5FAD27BCAD2900973DB3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		803B5FB227BCAD2900973DB3 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		803B5FB627BCAD2900973DB3 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		803B5FB827BCAD2900973DB3 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		803B5FBE27BCAD2900973DB3 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		803B5FC227BCAD2900973DB3 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		803B5FC427BCAD2900973DB3 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		803B5FA227BCAD2900973DB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803B5FA827BCAD2900973DB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803B5FAF27BCAD2900973DB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803B5FBB27BCAD2900973DB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		803B5F9827BCAD2700973DB3 = {
+			isa = PBXGroup;
+			children = (
+				803B5F9D27BCAD2700973DB3 /* Shared */,
+				803B5FAC27BCAD2900973DB3 /* macOS */,
+				803B5FB527BCAD2900973DB3 /* Tests iOS */,
+				803B5FC127BCAD2900973DB3 /* Tests macOS */,
+				803B5FA627BCAD2900973DB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		803B5F9D27BCAD2700973DB3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */,
+				803B5F9F27BCAD2700973DB3 /* ContentView.swift */,
+				803B5FA027BCAD2800973DB3 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		803B5FA627BCAD2900973DB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				803B5FA527BCAD2900973DB3 /* pickSomeFlowers.app */,
+				803B5FAB27BCAD2900973DB3 /* pickSomeFlowers.app */,
+				803B5FB227BCAD2900973DB3 /* Tests iOS.xctest */,
+				803B5FBE27BCAD2900973DB3 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		803B5FAC27BCAD2900973DB3 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				803B5FAD27BCAD2900973DB3 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		803B5FB527BCAD2900973DB3 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				803B5FB627BCAD2900973DB3 /* Tests_iOS.swift */,
+				803B5FB827BCAD2900973DB3 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		803B5FC127BCAD2900973DB3 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				803B5FC227BCAD2900973DB3 /* Tests_macOS.swift */,
+				803B5FC427BCAD2900973DB3 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		803B5FA427BCAD2900973DB3 /* pickSomeFlowers (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803B5FCE27BCAD2900973DB3 /* Build configuration list for PBXNativeTarget "pickSomeFlowers (iOS)" */;
+			buildPhases = (
+				803B5FA127BCAD2900973DB3 /* Sources */,
+				803B5FA227BCAD2900973DB3 /* Frameworks */,
+				803B5FA327BCAD2900973DB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pickSomeFlowers (iOS)";
+			productName = "pickSomeFlowers (iOS)";
+			productReference = 803B5FA527BCAD2900973DB3 /* pickSomeFlowers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		803B5FAA27BCAD2900973DB3 /* pickSomeFlowers (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803B5FD127BCAD2900973DB3 /* Build configuration list for PBXNativeTarget "pickSomeFlowers (macOS)" */;
+			buildPhases = (
+				803B5FA727BCAD2900973DB3 /* Sources */,
+				803B5FA827BCAD2900973DB3 /* Frameworks */,
+				803B5FA927BCAD2900973DB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pickSomeFlowers (macOS)";
+			productName = "pickSomeFlowers (macOS)";
+			productReference = 803B5FAB27BCAD2900973DB3 /* pickSomeFlowers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		803B5FB127BCAD2900973DB3 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803B5FD427BCAD2900973DB3 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				803B5FAE27BCAD2900973DB3 /* Sources */,
+				803B5FAF27BCAD2900973DB3 /* Frameworks */,
+				803B5FB027BCAD2900973DB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				803B5FB427BCAD2900973DB3 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 803B5FB227BCAD2900973DB3 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		803B5FBD27BCAD2900973DB3 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803B5FD727BCAD2900973DB3 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				803B5FBA27BCAD2900973DB3 /* Sources */,
+				803B5FBB27BCAD2900973DB3 /* Frameworks */,
+				803B5FBC27BCAD2900973DB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				803B5FC027BCAD2900973DB3 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 803B5FBE27BCAD2900973DB3 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		803B5F9927BCAD2700973DB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					803B5FA427BCAD2900973DB3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					803B5FAA27BCAD2900973DB3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					803B5FB127BCAD2900973DB3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 803B5FA427BCAD2900973DB3;
+					};
+					803B5FBD27BCAD2900973DB3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 803B5FAA27BCAD2900973DB3;
+					};
+				};
+			};
+			buildConfigurationList = 803B5F9C27BCAD2700973DB3 /* Build configuration list for PBXProject "pickSomeFlowers" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 803B5F9827BCAD2700973DB3;
+			productRefGroup = 803B5FA627BCAD2900973DB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				803B5FA427BCAD2900973DB3 /* pickSomeFlowers (iOS) */,
+				803B5FAA27BCAD2900973DB3 /* pickSomeFlowers (macOS) */,
+				803B5FB127BCAD2900973DB3 /* Tests iOS */,
+				803B5FBD27BCAD2900973DB3 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		803B5FA327BCAD2900973DB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803B5FCA27BCAD2900973DB3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803B5FA927BCAD2900973DB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803B5FCB27BCAD2900973DB3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803B5FB027BCAD2900973DB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803B5FBC27BCAD2900973DB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		803B5FA127BCAD2900973DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803B5FC827BCAD2900973DB3 /* ContentView.swift in Sources */,
+				803B5FC627BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803B5FA727BCAD2900973DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803B5FC927BCAD2900973DB3 /* ContentView.swift in Sources */,
+				803B5FC727BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803B5FAE27BCAD2900973DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803B5FB927BCAD2900973DB3 /* Tests_iOSLaunchTests.swift in Sources */,
+				803B5FB727BCAD2900973DB3 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803B5FBA27BCAD2900973DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803B5FC527BCAD2900973DB3 /* Tests_macOSLaunchTests.swift in Sources */,
+				803B5FC327BCAD2900973DB3 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		803B5FB427BCAD2900973DB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 803B5FA427BCAD2900973DB3 /* pickSomeFlowers (iOS) */;
+			targetProxy = 803B5FB327BCAD2900973DB3 /* PBXContainerItemProxy */;
+		};
+		803B5FC027BCAD2900973DB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 803B5FAA27BCAD2900973DB3 /* pickSomeFlowers (macOS) */;
+			targetProxy = 803B5FBF27BCAD2900973DB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		803B5FCC27BCAD2900973DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		803B5FCD27BCAD2900973DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		803B5FCF27BCAD2900973DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WZ4ZJY7A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koto-takahashi.pickSomeFlowers";
+				PRODUCT_NAME = pickSomeFlowers;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		803B5FD027BCAD2900973DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WZ4ZJY7A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koto-takahashi.pickSomeFlowers";
+				PRODUCT_NAME = pickSomeFlowers;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		803B5FD227BCAD2900973DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WZ4ZJY7A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koto-takahashi.pickSomeFlowers";
+				PRODUCT_NAME = pickSomeFlowers;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		803B5FD327BCAD2900973DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WZ4ZJY7A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koto-takahashi.pickSomeFlowers";
+				PRODUCT_NAME = pickSomeFlowers;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		803B5FD527BCAD2900973DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WZ4ZJY7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koto-takahashi.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "pickSomeFlowers (iOS)";
+			};
+			name = Debug;
+		};
+		803B5FD627BCAD2900973DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WZ4ZJY7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koto-takahashi.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "pickSomeFlowers (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		803B5FD827BCAD2900973DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WZ4ZJY7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koto-takahashi.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "pickSomeFlowers (macOS)";
+			};
+			name = Debug;
+		};
+		803B5FD927BCAD2900973DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WZ4ZJY7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koto-takahashi.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "pickSomeFlowers (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		803B5F9C27BCAD2700973DB3 /* Build configuration list for PBXProject "pickSomeFlowers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803B5FCC27BCAD2900973DB3 /* Debug */,
+				803B5FCD27BCAD2900973DB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803B5FCE27BCAD2900973DB3 /* Build configuration list for PBXNativeTarget "pickSomeFlowers (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803B5FCF27BCAD2900973DB3 /* Debug */,
+				803B5FD027BCAD2900973DB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803B5FD127BCAD2900973DB3 /* Build configuration list for PBXNativeTarget "pickSomeFlowers (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803B5FD227BCAD2900973DB3 /* Debug */,
+				803B5FD327BCAD2900973DB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803B5FD427BCAD2900973DB3 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803B5FD527BCAD2900973DB3 /* Debug */,
+				803B5FD627BCAD2900973DB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803B5FD727BCAD2900973DB3 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803B5FD827BCAD2900973DB3 /* Debug */,
+				803B5FD927BCAD2900973DB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 803B5F9927BCAD2700973DB3 /* Project object */;
+}
