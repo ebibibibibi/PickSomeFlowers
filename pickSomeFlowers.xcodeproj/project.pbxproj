@@ -17,6 +17,8 @@
 		803B5FC927BCAD2900973DB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9F27BCAD2700973DB3 /* ContentView.swift */; };
 		803B5FCA27BCAD2900973DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803B5FA027BCAD2800973DB3 /* Assets.xcassets */; };
 		803B5FCB27BCAD2900973DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803B5FA027BCAD2800973DB3 /* Assets.xcassets */; };
+		80CF3DA027BDD7A100649C7D /* Flowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CF3D9F27BDD7A100649C7D /* Flowers.swift */; };
+		80CF3DA427BDF90100649C7D /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CF3DA327BDF90100649C7D /* TopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		803B5FBE27BCAD2900973DB3 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		803B5FC227BCAD2900973DB3 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		803B5FC427BCAD2900973DB3 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		80CF3D9F27BDD7A100649C7D /* Flowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowers.swift; sourceTree = "<group>"; };
+		80CF3DA327BDF90100649C7D /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		803B5F9827BCAD2700973DB3 = {
 			isa = PBXGroup;
 			children = (
+				80CF3D9E27BDD79600649C7D /* Model */,
 				803B5F9D27BCAD2700973DB3 /* Shared */,
 				803B5FAC27BCAD2900973DB3 /* macOS */,
 				803B5FB527BCAD2900973DB3 /* Tests iOS */,
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */,
+				80CF3DA327BDF90100649C7D /* TopView.swift */,
 				803B5F9F27BCAD2700973DB3 /* ContentView.swift */,
 				803B5FA027BCAD2800973DB3 /* Assets.xcassets */,
 			);
@@ -139,6 +145,14 @@
 				803B5FC427BCAD2900973DB3 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		80CF3D9E27BDD79600649C7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80CF3D9F27BDD7A100649C7D /* Flowers.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +313,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CF3DA027BDD7A100649C7D /* Flowers.swift in Sources */,
 				803B5FC827BCAD2900973DB3 /* ContentView.swift in Sources */,
+				80CF3DA427BDF90100649C7D /* TopView.swift in Sources */,
 				803B5FC627BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
