@@ -17,7 +17,7 @@ struct TopView: View {
         Flower(flowerName: "CommonfieldSpeedwell",flowerNameJ: "オオイヌノフグリ")
     ]
     @State var currentflower: String = "appleFrpwer"
-    
+    //test
     
     var body: some View {
         NavigationView {
