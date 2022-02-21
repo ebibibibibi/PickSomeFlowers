@@ -9,7 +9,8 @@ import SwiftUI
 
 // A_flower Model
 struct A_flower: Identifiable{
-    var id = UUID().uuidString
+    let id = UUID().uuidString
     var currentflowerName: String
-    var isPushed: Bool = false
+    var isPushed: Bool
 }
+
