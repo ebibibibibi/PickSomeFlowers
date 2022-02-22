@@ -8,24 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    //    init() { print("Child.init()") }
+    @State var s = false
     @State var flowers: [A_flower] = [
+        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
+        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
+        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
+        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
+        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
+        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
+        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
         A_flower(currentflowerName: "appleFrpwer", isPushed: false),
         A_flower(currentflowerName: "appleFrpwer", isPushed: false),
         A_flower(currentflowerName: "appleFrpwer", isPushed: false),
         A_flower(currentflowerName: "appleFrpwer", isPushed: false),
         A_flower(currentflowerName: "appleFrpwer", isPushed: false)
     ]
-    
-    @State var isPushed = false
-    //    mutating func prepFlags(){
-    //           var initIsReplied: [Bool] = [Bool]()
-    //           for _ in 0..<elementCount {
-    //               initIsReplied.append(false)
-    //           }
-    //           _isReplied = State(initialValue: initIsReplied)
-    //       }
-    @State private var opacity = 1.0
     var currentFlower: String = "appleFrpwer"
     mutating func deselectA_Flower() {
         flowers = flowers.map {
@@ -34,25 +31,21 @@ struct ContentView: View {
             return flower
         }
     }
+    
     var body: some View {
-        //        GeometryReader{proxy in
-        //            let size = proxy.size
+        
         ZStack{
             Color.green
                 .ignoresSafeArea()
                 .opacity(0.15)
-            VStack{
-                
+            Group{
                 ForEach(1...flowers.count,id: \.self){flowerIndex in
-                    
                     Image("\(currentFlower)")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 90, height: 90)
-                    
                         .offset(x: .random(in: -100...100), y: .random(in: -125...100))
                         .opacity(flowers[flowerIndex - 1].isPushed ? 0 : 1 )
-                        
                         .onTapGesture {
                             //.scaleEffectはViewの拡大縮小の動き。
                             //描画された結果を拡大/縮小している
@@ -69,17 +62,14 @@ struct ContentView: View {
             }
         }
     }
-}
-
-//struct FlowerCharacters: View{
-//    var body: some View{
-//
-//    }
-//}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    func isPushed(isPushed: Bool) -> Bool{
+        let ispushed : Bool = true
+        for i in 1...flowers.count {
+            if flowers[i].isPushed != false {
+                return ispushed
+            }
+        }
+        return ispushed
     }
 }
 
@@ -87,3 +77,8 @@ struct ContentView_Previews: PreviewProvider {
 
 
 
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
