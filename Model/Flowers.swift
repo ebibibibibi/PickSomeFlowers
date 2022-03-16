@@ -17,7 +17,6 @@ struct Flower: Identifiable{
     var id = UUID().uuidString
     var flowerName: String
     var flowerNameJ: String
-    var randomFlowerPostions: [CGSize] = []
 //    var countFlowers: Int
 }
 

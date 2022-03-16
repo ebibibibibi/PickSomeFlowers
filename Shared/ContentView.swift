@@ -9,14 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @State var s = false
+    @State private var showingAlert = false
+    
     @State var flowers: [A_flower] = [
-        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
-        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
-        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
-        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
-        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
-        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
-        A_flower(currentflowerName: "appleFrpwer", isPushed: false),
         A_flower(currentflowerName: "appleFrpwer", isPushed: false),
         A_flower(currentflowerName: "appleFrpwer", isPushed: false),
         A_flower(currentflowerName: "appleFrpwer", isPushed: false),
@@ -43,7 +38,7 @@ struct ContentView: View {
                     Image("\(currentFlower)")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 90, height: 90)
+                        .frame(width: 150, height: 150)
                         .offset(x: .random(in: -100...100), y: .random(in: -125...100))
                         .opacity(flowers[flowerIndex - 1].isPushed ? 0 : 1 )
                         .onTapGesture {
@@ -62,6 +57,10 @@ struct ContentView: View {
             }
         }
     }
+
+    //    if isPushed(isPushed: s){
+//        self.showingAlert = true
+//    }
     func isPushed(isPushed: Bool) -> Bool{
         let ispushed : Bool = true
         for i in 1...flowers.count {
@@ -69,6 +68,7 @@ struct ContentView: View {
                 return ispushed
             }
         }
+        
         return ispushed
     }
 }
