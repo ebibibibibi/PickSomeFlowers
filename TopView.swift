@@ -5,25 +5,25 @@
 //  Created by kotomi tahkahashi on 2022/02/17.
 //
 
-import SwiftUI
+import SwiftUI 
 
 struct TopView: View {
-    @State var flower: [Flower]  = [
-        Flower(flowerName: "appleFrpwer",flowerNameJ: "りんごの花"),
-        Flower(flowerName: "CommonfieldSpeedwell",flowerNameJ: "オオイヌノフグリ"),
-        Flower(flowerName: "WhiteClover",flowerNameJ: "クローバー"),Flower(flowerName: "appleFrpwer",flowerNameJ: "りんごの花"),
-        Flower(flowerName: "CommonfieldSpeedwell",flowerNameJ: "オオイヌノフグリ"),
-        Flower(flowerName: "WhiteClover",flowerNameJ: "クローバー"),
-        Flower(flowerName: "CommonfieldSpeedwell",flowerNameJ: "オオイヌノフグリ")
+    @State var flowers: [Flowers]  = [
+        Flowers(flowerName: "appleFrpwer",flowerNameJ: "りんごの花"),
+        Flowers(flowerName: "CommonfieldSpeedwell",flowerNameJ: "オオイヌノフグリ"),
+        Flowers(flowerName: "WhiteClover",flowerNameJ: "クローバー"),
+        Flowers(flowerName: "appleFrpwer",flowerNameJ: "りんごの花"),
+        Flowers(flowerName: "CommonfieldSpeedwell",flowerNameJ: "オオイヌノフグリ"),
+        Flowers(flowerName: "WhiteClover",flowerNameJ: "クローバー"),
+        Flowers(flowerName: "CommonfieldSpeedwell",flowerNameJ: "オオイヌノフグリ")
     ]
     @State var currentflower: String = "appleFrpwer"
 
-    
     var body: some View {
-        NavigationView {
-            ScrollViewReader{proxy in
+        
+//            ScrollViewReader{proxy in
                 ScrollView(.vertical, showsIndicators: false){
-                    ForEach(flower){specificFlower in
+                    ForEach(flowers){specificFlower in
                         NavigationLink(destination: ContentView(currentFlower: specificFlower.flowerName)){
                             ZStack{
                                 RoundedRectangle(cornerRadius: 30)
@@ -38,7 +38,6 @@ struct TopView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 100, height: 130,alignment: .bottom)
-                            }
                         }
                     }
                 }
@@ -47,7 +46,7 @@ struct TopView: View {
             //                .bold()
             //                .font(.title2)
             //                .frame(width: 320, height: 100,alignment: .center )
-        }
+//        }
     }
 }
 
@@ -58,8 +57,8 @@ struct TopView_Previews: PreviewProvider {
 }
 
 
-enum PizzaSize: String,CaseIterable{
-    case appleFrpwer = "りんごの花"
-    case CommonfieldSpeedwell = "オオイヌノフグリ"
-    case WhiteClover = "クローバー"
+enum DarkModeSetting: Int {
+    case followSystem = 0
+    case darkMode = 1
+    case lightMode = 2
 }
