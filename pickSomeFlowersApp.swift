@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct pickSomeFlowersApp: App {
+struct PickSomeFlowersApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {

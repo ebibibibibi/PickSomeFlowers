@@ -8,17 +8,13 @@
 import SwiftUI 
 
 struct TopView: View {
+
     @State var flowers: [Flowers]  = [
         Flowers(flowerName: "appleFrpwer",flowerNameJ: "りんごの花"),
         Flowers(flowerName: "CommonfieldSpeedwell",flowerNameJ: "オオイヌノフグリ"),
-        Flowers(flowerName: "WhiteClover",flowerNameJ: "クローバー"),
-        Flowers(flowerName: "appleFrpwer",flowerNameJ: "りんごの花"),
-        Flowers(flowerName: "CommonfieldSpeedwell",flowerNameJ: "オオイヌノフグリ"),
-        Flowers(flowerName: "WhiteClover",flowerNameJ: "クローバー"),
-        Flowers(flowerName: "CommonfieldSpeedwell",flowerNameJ: "オオイヌノフグリ")
+        Flowers(flowerName: "WhiteClover",flowerNameJ: "クローバー")
     ]
     @State var currentflower: String = "appleFrpwer"
-
     var body: some View {
         
 //            ScrollViewReader{proxy in
@@ -43,10 +39,6 @@ struct TopView: View {
                 }
             }
             .navigationTitle(Text("お花を探しに行こう🌹"))
-            //                .bold()
-            //                .font(.title2)
-            //                .frame(width: 320, height: 100,alignment: .center )
-//        }
     }
 }
 
@@ -57,8 +49,3 @@ struct TopView_Previews: PreviewProvider {
 }
 
 
-enum DarkModeSetting: Int {
-    case followSystem = 0
-    case darkMode = 1
-    case lightMode = 2
-}
