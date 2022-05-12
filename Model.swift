@@ -21,10 +21,6 @@ struct LotFrower: Identifiable{
 }
 
 
-
-
-
-
 struct Flowers: Identifiable{
     var id = UUID().uuidString
     var flowerName: String
