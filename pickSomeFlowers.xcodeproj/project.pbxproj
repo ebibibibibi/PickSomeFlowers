@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		802EBA5C282D1CA000151490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 802EBA5B282D1CA000151490 /* Assets.xcassets */; };
-		802EBA5D282D1CA000151490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 802EBA5B282D1CA000151490 /* Assets.xcassets */; };
 		803B5FB727BCAD2900973DB3 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FB627BCAD2900973DB3 /* Tests_iOS.swift */; };
 		803B5FB927BCAD2900973DB3 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FB827BCAD2900973DB3 /* Tests_iOSLaunchTests.swift */; };
 		803B5FC327BCAD2900973DB3 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FC227BCAD2900973DB3 /* Tests_macOS.swift */; };
@@ -18,6 +16,8 @@
 		803B5FC827BCAD2900973DB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9F27BCAD2700973DB3 /* ContentView.swift */; };
 		803B5FC927BCAD2900973DB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9F27BCAD2700973DB3 /* ContentView.swift */; };
 		80CF3DA427BDF90100649C7D /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CF3DA327BDF90100649C7D /* TopView.swift */; };
+		80F27C0228F2ECDD0019330E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F27C0128F2ECDD0019330E /* Assets.xcassets */; };
+		80F27C0328F2ECDD0019330E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F27C0128F2ECDD0019330E /* Assets.xcassets */; };
 		80FE97E0281218ED005886B5 /* drag＿drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE97DF281218ED005886B5 /* drag＿drop.swift */; };
 		80FE97E1281218ED005886B5 /* drag＿drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE97DF281218ED005886B5 /* drag＿drop.swift */; };
 		80FE97E2281218ED005886B5 /* drag＿drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE97DF281218ED005886B5 /* drag＿drop.swift */; };
@@ -44,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		802EBA5B282D1CA000151490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../gitClone/AutolayoutTutorials-master/CodeOfAutoLayout/CodeOfAutoLayout/Assets.xcassets"; sourceTree = "<group>"; };
 		803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickSomeFlowersApp.swift; sourceTree = "<group>"; };
 		803B5F9F27BCAD2700973DB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		803B5FA527BCAD2900973DB3 /* pickSomeFlowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickSomeFlowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +56,7 @@
 		803B5FC227BCAD2900973DB3 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		803B5FC427BCAD2900973DB3 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		80CF3DA327BDF90100649C7D /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		80F27C0128F2ECDD0019330E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80FE97DF281218ED005886B5 /* drag＿drop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "drag＿drop.swift"; sourceTree = "<group>"; };
 		80FE97E928121E98005886B5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +101,7 @@
 				80CF3DA327BDF90100649C7D /* TopView.swift */,
 				803B5F9F27BCAD2700973DB3 /* ContentView.swift */,
 				80FE97DF281218ED005886B5 /* drag＿drop.swift */,
-				802EBA5B282D1CA000151490 /* Assets.xcassets */,
+				80F27C0128F2ECDD0019330E /* Assets.xcassets */,
 				803B5FAC27BCAD2900973DB3 /* macOS */,
 				803B5FB527BCAD2900973DB3 /* Tests iOS */,
 				803B5FC127BCAD2900973DB3 /* Tests macOS */,
@@ -271,7 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				802EBA5C282D1CA000151490 /* Assets.xcassets in Resources */,
+				80F27C0228F2ECDD0019330E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				802EBA5D282D1CA000151490 /* Assets.xcassets in Resources */,
+				80F27C0328F2ECDD0019330E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
