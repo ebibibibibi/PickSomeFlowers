@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var array:[[String]] = []
+    var array: [[String]] = []
     @State var flowers: [LotFrower] = [
         LotFrower(currentflowerName: "flower_tullip", isPushed: false),
         LotFrower(currentflowerName: "flower_tullip", isPushed: false),
@@ -20,12 +20,12 @@ struct ContentView: View {
     
     var body: some View {
         
-        ZStack{
+        ZStack {
             Color.green
                 .ignoresSafeArea()
                 .opacity(0.15)
-            Group{
-                ForEach(1...flowers.count,id: \.self){flowerIndex in
+            Group {
+                ForEach(1...flowers.count, id: \.self) {flowerIndex in
                     Image("\(currentFlower)")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -42,10 +42,8 @@ struct ContentView: View {
     }
 }
 
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
-

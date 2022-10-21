@@ -12,7 +12,7 @@ struct drag_drop: View {
             
             var drag: some Gesture {
                 DragGesture()
-                .onChanged{ value in
+                .onChanged { value in
                     self.position = CGSize(
                         width: value.startLocation.x
                             + value.translation.width,
@@ -20,7 +20,7 @@ struct drag_drop: View {
                             + value.translation.height
                     )
                 }
-                .onEnded{ value in
+                .onEnded { value in
                     self.position = CGSize(
                         width: value.startLocation.x
                             + value.translation.width,
@@ -46,5 +46,3 @@ struct drag_drop_Previews: PreviewProvider {
         drag_drop()
     }
 }
-
-
