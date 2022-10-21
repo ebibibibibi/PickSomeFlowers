@@ -8,15 +8,15 @@
 import SwiftUI
 
 let randomIntArray = [Int](repeating: 0, count: 10).map { (some: Int) -> Int in
-    let randomUInt: Double = Double(arc4random_uniform(750)) // 0 ..< 100 の乱数を作る
+    let randomUInt: Double = Double.random(in: 0..<750) // 0 ..< 100 の乱数を作る
     return Int(randomUInt)
 }
 
-struct LotFrower: Identifiable{
+struct LotFrower: Identifiable {
     var id = UUID().uuidString
     var currentflowerName: String = "appleFrpwer"
-    let x = Double(arc4random_uniform(100))
-    let y = Double(arc4random_uniform(50))
+    let x = Double.random(in: 0..<100)
+    let y = Double.random(in: 0..<50)
     var isPushed: Bool = false
 }
 

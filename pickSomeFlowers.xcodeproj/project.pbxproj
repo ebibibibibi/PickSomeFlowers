@@ -9,21 +9,11 @@
 /* Begin PBXBuildFile section */
 		803B5FB727BCAD2900973DB3 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FB627BCAD2900973DB3 /* Tests_iOS.swift */; };
 		803B5FB927BCAD2900973DB3 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FB827BCAD2900973DB3 /* Tests_iOSLaunchTests.swift */; };
-		803B5FC327BCAD2900973DB3 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FC227BCAD2900973DB3 /* Tests_macOS.swift */; };
-		803B5FC527BCAD2900973DB3 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FC427BCAD2900973DB3 /* Tests_macOSLaunchTests.swift */; };
 		803B5FC627BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */; };
-		803B5FC727BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */; };
 		803B5FC827BCAD2900973DB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9F27BCAD2700973DB3 /* ContentView.swift */; };
-		803B5FC927BCAD2900973DB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9F27BCAD2700973DB3 /* ContentView.swift */; };
 		80CF3DA427BDF90100649C7D /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CF3DA327BDF90100649C7D /* TopView.swift */; };
 		80F27C0228F2ECDD0019330E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F27C0128F2ECDD0019330E /* Assets.xcassets */; };
-		80F27C0328F2ECDD0019330E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F27C0128F2ECDD0019330E /* Assets.xcassets */; };
-		80FE97E0281218ED005886B5 /* drag＿drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE97DF281218ED005886B5 /* drag＿drop.swift */; };
-		80FE97E1281218ED005886B5 /* drag＿drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE97DF281218ED005886B5 /* drag＿drop.swift */; };
-		80FE97E2281218ED005886B5 /* drag＿drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE97DF281218ED005886B5 /* drag＿drop.swift */; };
-		80FE97E3281218ED005886B5 /* drag＿drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE97DF281218ED005886B5 /* drag＿drop.swift */; };
 		80FE97EA28121E98005886B5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE97E928121E98005886B5 /* Model.swift */; };
-		80FE97EB28121E98005886B5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE97E928121E98005886B5 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,42 +24,23 @@
 			remoteGlobalIDString = 803B5FA427BCAD2900973DB3;
 			remoteInfo = "pickSomeFlowers (iOS)";
 		};
-		803B5FBF27BCAD2900973DB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 803B5F9927BCAD2700973DB3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 803B5FAA27BCAD2900973DB3;
-			remoteInfo = "pickSomeFlowers (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickSomeFlowersApp.swift; sourceTree = "<group>"; };
 		803B5F9F27BCAD2700973DB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		803B5FA527BCAD2900973DB3 /* pickSomeFlowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickSomeFlowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		803B5FAB27BCAD2900973DB3 /* pickSomeFlowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickSomeFlowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		803B5FAD27BCAD2900973DB3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		803B5FB227BCAD2900973DB3 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		803B5FB627BCAD2900973DB3 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		803B5FB827BCAD2900973DB3 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		803B5FBE27BCAD2900973DB3 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		803B5FC227BCAD2900973DB3 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		803B5FC427BCAD2900973DB3 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		80CF3DA327BDF90100649C7D /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		80F27C0128F2ECDD0019330E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		80FE97DF281218ED005886B5 /* drag＿drop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "drag＿drop.swift"; sourceTree = "<group>"; };
 		80FE97E928121E98005886B5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		803B5FA227BCAD2900973DB3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		803B5FA827BCAD2900973DB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,11 +71,8 @@
 				80FE97E928121E98005886B5 /* Model.swift */,
 				80CF3DA327BDF90100649C7D /* TopView.swift */,
 				803B5F9F27BCAD2700973DB3 /* ContentView.swift */,
-				80FE97DF281218ED005886B5 /* drag＿drop.swift */,
 				80F27C0128F2ECDD0019330E /* Assets.xcassets */,
-				803B5FAC27BCAD2900973DB3 /* macOS */,
 				803B5FB527BCAD2900973DB3 /* Tests iOS */,
-				803B5FC127BCAD2900973DB3 /* Tests macOS */,
 				803B5FA627BCAD2900973DB3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,19 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				803B5FA527BCAD2900973DB3 /* pickSomeFlowers.app */,
-				803B5FAB27BCAD2900973DB3 /* pickSomeFlowers.app */,
 				803B5FB227BCAD2900973DB3 /* Tests iOS.xctest */,
 				803B5FBE27BCAD2900973DB3 /* Tests macOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		803B5FAC27BCAD2900973DB3 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				803B5FAD27BCAD2900973DB3 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		803B5FB527BCAD2900973DB3 /* Tests iOS */ = {
@@ -135,15 +94,6 @@
 				803B5FB827BCAD2900973DB3 /* Tests_iOSLaunchTests.swift */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		803B5FC127BCAD2900973DB3 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				803B5FC227BCAD2900973DB3 /* Tests_macOS.swift */,
-				803B5FC427BCAD2900973DB3 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +106,7 @@
 				803B5FA127BCAD2900973DB3 /* Sources */,
 				803B5FA227BCAD2900973DB3 /* Frameworks */,
 				803B5FA327BCAD2900973DB3 /* Resources */,
+				807973222902D577001EC33C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -164,23 +115,6 @@
 			name = "pickSomeFlowers (iOS)";
 			productName = "pickSomeFlowers (iOS)";
 			productReference = 803B5FA527BCAD2900973DB3 /* pickSomeFlowers.app */;
-			productType = "com.apple.product-type.application";
-		};
-		803B5FAA27BCAD2900973DB3 /* pickSomeFlowers (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 803B5FD127BCAD2900973DB3 /* Build configuration list for PBXNativeTarget "pickSomeFlowers (macOS)" */;
-			buildPhases = (
-				803B5FA727BCAD2900973DB3 /* Sources */,
-				803B5FA827BCAD2900973DB3 /* Frameworks */,
-				803B5FA927BCAD2900973DB3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "pickSomeFlowers (macOS)";
-			productName = "pickSomeFlowers (macOS)";
-			productReference = 803B5FAB27BCAD2900973DB3 /* pickSomeFlowers.app */;
 			productType = "com.apple.product-type.application";
 		};
 		803B5FB127BCAD2900973DB3 /* Tests iOS */ = {
@@ -212,7 +146,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				803B5FC027BCAD2900973DB3 /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
@@ -230,9 +163,6 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					803B5FA427BCAD2900973DB3 = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
-					803B5FAA27BCAD2900973DB3 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					803B5FB127BCAD2900973DB3 = {
@@ -259,7 +189,6 @@
 			projectRoot = "";
 			targets = (
 				803B5FA427BCAD2900973DB3 /* pickSomeFlowers (iOS) */,
-				803B5FAA27BCAD2900973DB3 /* pickSomeFlowers (macOS) */,
 				803B5FB127BCAD2900973DB3 /* Tests iOS */,
 				803B5FBD27BCAD2900973DB3 /* Tests macOS */,
 			);
@@ -272,14 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80F27C0228F2ECDD0019330E /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		803B5FA927BCAD2900973DB3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80F27C0328F2ECDD0019330E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +220,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		807973222902D577001EC33C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d /opt/homebrew/bin; then\n    PATH=/opt/homebrew/bin/:$PATH\nfi\n\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		803B5FA127BCAD2900973DB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -306,20 +247,8 @@
 			files = (
 				803B5FC827BCAD2900973DB3 /* ContentView.swift in Sources */,
 				80CF3DA427BDF90100649C7D /* TopView.swift in Sources */,
-				80FE97E0281218ED005886B5 /* drag＿drop.swift in Sources */,
 				803B5FC627BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */,
 				80FE97EA28121E98005886B5 /* Model.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		803B5FA727BCAD2900973DB3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80FE97EB28121E98005886B5 /* Model.swift in Sources */,
-				803B5FC927BCAD2900973DB3 /* ContentView.swift in Sources */,
-				80FE97E1281218ED005886B5 /* drag＿drop.swift in Sources */,
-				803B5FC727BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				803B5FB927BCAD2900973DB3 /* Tests_iOSLaunchTests.swift in Sources */,
-				80FE97E2281218ED005886B5 /* drag＿drop.swift in Sources */,
 				803B5FB727BCAD2900973DB3 /* Tests_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,9 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				803B5FC527BCAD2900973DB3 /* Tests_macOSLaunchTests.swift in Sources */,
-				80FE97E3281218ED005886B5 /* drag＿drop.swift in Sources */,
-				803B5FC327BCAD2900973DB3 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,11 +275,6 @@
 			isa = PBXTargetDependency;
 			target = 803B5FA427BCAD2900973DB3 /* pickSomeFlowers (iOS) */;
 			targetProxy = 803B5FB327BCAD2900973DB3 /* PBXContainerItemProxy */;
-		};
-		803B5FC027BCAD2900973DB3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 803B5FAA27BCAD2900973DB3 /* pickSomeFlowers (macOS) */;
-			targetProxy = 803B5FBF27BCAD2900973DB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -531,62 +451,6 @@
 			};
 			name = Release;
 		};
-		803B5FD227BCAD2900973DB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V9WZ4ZJY7A;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "koto-takahashi.pickSomeFlowers";
-				PRODUCT_NAME = pickSomeFlowers;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		803B5FD327BCAD2900973DB3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V9WZ4ZJY7A;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "koto-takahashi.pickSomeFlowers";
-				PRODUCT_NAME = pickSomeFlowers;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		803B5FD527BCAD2900973DB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -683,15 +547,6 @@
 			buildConfigurations = (
 				803B5FCF27BCAD2900973DB3 /* Debug */,
 				803B5FD027BCAD2900973DB3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		803B5FD127BCAD2900973DB3 /* Build configuration list for PBXNativeTarget "pickSomeFlowers (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				803B5FD227BCAD2900973DB3 /* Debug */,
-				803B5FD327BCAD2900973DB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
