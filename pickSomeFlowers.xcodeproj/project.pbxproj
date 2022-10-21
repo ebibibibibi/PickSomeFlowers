@@ -30,7 +30,6 @@
 		803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickSomeFlowersApp.swift; sourceTree = "<group>"; };
 		803B5F9F27BCAD2700973DB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		803B5FA527BCAD2900973DB3 /* pickSomeFlowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickSomeFlowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		803B5FAD27BCAD2900973DB3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		803B5FB227BCAD2900973DB3 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		803B5FB627BCAD2900973DB3 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		803B5FB827BCAD2900973DB3 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
@@ -73,7 +72,6 @@
 				80CF3DA327BDF90100649C7D /* TopView.swift */,
 				803B5F9F27BCAD2700973DB3 /* ContentView.swift */,
 				80F27C0128F2ECDD0019330E /* Assets.xcassets */,
-				803B5FAC27BCAD2900973DB3 /* macOS */,
 				803B5FB527BCAD2900973DB3 /* Tests iOS */,
 				803B5FA627BCAD2900973DB3 /* Products */,
 			);
@@ -87,14 +85,6 @@
 				803B5FBE27BCAD2900973DB3 /* Tests macOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		803B5FAC27BCAD2900973DB3 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				803B5FAD27BCAD2900973DB3 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		803B5FB527BCAD2900973DB3 /* Tests iOS */ = {
