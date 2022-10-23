@@ -9,11 +9,11 @@ import SwiftUI
 
 class PickSomeFlowerViewModel: ObservableObject {
     @Published var flowers: [Flower]  = [
-        Flower(flowerName: "flower_ajisai", flowerNameJ: "あじさい"),
-        Flower(flowerName: "flower_tullip", flowerNameJ: "チューリップ"),
-        Flower(flowerName: "flower_asagao", flowerNameJ: "朝顔")
+        Flower(imageFileName: "flower_ajisai", flowerName: "あじさい"),
+        Flower(imageFileName: "flower_tullip", flowerName: "チューリップ"),
+        Flower(imageFileName: "flower_asagao", flowerName: "朝顔")
     ]
-    @Published var currentFlower: Flower = Flower(flowerName: "flower_ajisai", flowerNameJ: "あじさい")
+    @Published var currentFlower: Flower = Flower(imageFileName: "flower_ajisai", flowerName: "あじさい")
     
     init(){
         

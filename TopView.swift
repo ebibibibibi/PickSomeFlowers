@@ -10,9 +10,9 @@ import SwiftUI
 struct TopView: View {
 
     @State var flowers: [Flower]  = [
-        Flower(flowerName: "flower_ajisai", flowerNameJ: "あじさい"),
-        Flower(flowerName: "flower_tullip", flowerNameJ: "チューリップ"),
-        Flower(flowerName: "flower_asagao", flowerNameJ: "朝顔")
+        Flower(imageFileName: "flower_ajisai", flowerName: "あじさい"),
+        Flower(imageFileName: "flower_tullip", flowerName: "チューリップ"),
+        Flower(imageFileName: "flower_asagao", flowerName: "朝顔")
     ]
     @State var currentflower: String = "flower_asagao"
     var body: some View {
@@ -20,17 +20,17 @@ struct TopView: View {
 //            ScrollViewReader{proxy in
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(flowers) {specificFlower in
-                        NavigationLink(destination: ContentView(currentFlower: specificFlower.flowerName)) {
+                        NavigationLink(destination: ContentView(currentFlower: specificFlower.imageFileName)) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 30)
                                     .fill(Color.green)
                                     .frame(width: 280, height: 150)
                                     .opacity(0.15)
                                 
-                                Text(specificFlower.flowerNameJ)
+                                Text(specificFlower.flowerName)
                                     .bold()
                                     .position(x: 130, y: 20)
-                                Image(specificFlower.flowerName)
+                                Image(specificFlower.imageFileName)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 100, height: 130, alignment: .bottom)

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LotFrower: Identifiable {
     var id = UUID().uuidString
-    var currentflowerName: Flower = Flower(flowerName: "flower_ajisai", flowerNameJ: "あじさい")
+    var currentflowerName: Flower = Flower(imageFileName: "flower_ajisai", flowerName: "あじさい")
     let x = Double.random(in: 0..<100)
     let y = Double.random(in: 0..<50)
     var isPushed: Bool = false
@@ -17,6 +17,6 @@ struct LotFrower: Identifiable {
 
 struct Flower: Identifiable {
     var id = UUID().uuidString
+    var imageFileName: String
     var flowerName: String
-    var flowerNameJ: String
 }
