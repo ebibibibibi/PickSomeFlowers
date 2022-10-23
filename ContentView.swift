@@ -16,7 +16,7 @@ struct ContentView: View {
         LotFrower(),
         LotFrower()
     ]
-    var currentFlower: String = "flower_tullip"
+    var selectedFlower: String = "flower_tullip"
     
     var body: some View {
         
@@ -26,7 +26,7 @@ struct ContentView: View {
                 .opacity(0.15)
             Group {
                 ForEach(1...flowers.count, id: \.self) {flowerIndex in
-                    Image("\(currentFlower)")
+                    Image("\(selectedFlower)")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 150, height: 150)

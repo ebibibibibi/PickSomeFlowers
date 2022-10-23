@@ -13,7 +13,7 @@ class PickSomeFlowerViewModel: ObservableObject {
         Flower(imageFileName: "flower_tullip", flowerName: "チューリップ"),
         Flower(imageFileName: "flower_asagao", flowerName: "朝顔")
     ]
-    @Published var currentFlower: Flower = Flower(imageFileName: "flower_ajisai", flowerName: "あじさい")
+    @Published var selectedFlower: Flower = Flower(imageFileName: "flower_ajisai", flowerName: "あじさい")
     
     init(){
         

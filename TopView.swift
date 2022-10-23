@@ -14,13 +14,13 @@ struct TopView: View {
         Flower(imageFileName: "flower_tullip", flowerName: "チューリップ"),
         Flower(imageFileName: "flower_asagao", flowerName: "朝顔")
     ]
-    @State var currentflower: String = "flower_asagao"
+    @State var selectedFlower: String = "flower_asagao"
     var body: some View {
         
 //            ScrollViewReader{proxy in
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(flowers) {specificFlower in
-                        NavigationLink(destination: ContentView(currentFlower: specificFlower.imageFileName)) {
+                        NavigationLink(destination: ContentView(selectedFlower: specificFlower.imageFileName)) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 30)
                                     .fill(Color.green)
