@@ -5,7 +5,7 @@
 //  Created by kotomi tahkahashi on 2022/04/22.
 //
 
-import SwiftUI
+import Foundation
 
 struct LotFrower: Identifiable {
     var id = UUID().uuidString
