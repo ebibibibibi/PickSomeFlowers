@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LotFrower: Identifiable {
     var id = UUID().uuidString
-    var currentflowerName: String = "appleFrpwer"
+    var currentflowerName: Flowers = Flowers(flowerName: "flower_ajisai", flowerNameJ: "あじさい")
     let x = Double.random(in: 0..<100)
     let y = Double.random(in: 0..<50)
     var isPushed: Bool = false

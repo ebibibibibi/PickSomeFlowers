@@ -11,10 +11,10 @@ struct ContentView: View {
     
     var array: [[String]] = []
     @State var flowers: [LotFrower] = [
-        LotFrower(currentflowerName: "flower_tullip", isPushed: false),
-        LotFrower(currentflowerName: "flower_tullip", isPushed: false),
-        LotFrower(currentflowerName: "flower_tullip", isPushed: false),
-        LotFrower(currentflowerName: "flower_tullip", isPushed: false)
+        LotFrower(),
+        LotFrower(),
+        LotFrower(),
+        LotFrower()
     ]
     var currentFlower: String = "flower_tullip"
     
