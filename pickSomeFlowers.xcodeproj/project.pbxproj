@@ -11,6 +11,7 @@
 		803B5FB927BCAD2900973DB3 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5FB827BCAD2900973DB3 /* Tests_iOSLaunchTests.swift */; };
 		803B5FC627BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */; };
 		803B5FC827BCAD2900973DB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B5F9F27BCAD2700973DB3 /* ContentView.swift */; };
+		8079732429030083001EC33C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079732329030083001EC33C /* ViewModel.swift */; };
 		80CF3DA427BDF90100649C7D /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CF3DA327BDF90100649C7D /* TopView.swift */; };
 		80F27C0228F2ECDD0019330E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F27C0128F2ECDD0019330E /* Assets.xcassets */; };
 		80FE97EA28121E98005886B5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE97E928121E98005886B5 /* Model.swift */; };
@@ -34,6 +35,7 @@
 		803B5FB627BCAD2900973DB3 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		803B5FB827BCAD2900973DB3 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		803B5FBE27BCAD2900973DB3 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8079732329030083001EC33C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		80CF3DA327BDF90100649C7D /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		80F27C0128F2ECDD0019330E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80FE97E928121E98005886B5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				803B5F9E27BCAD2700973DB3 /* pickSomeFlowersApp.swift */,
 				80FE97E928121E98005886B5 /* Model.swift */,
+				8079732329030083001EC33C /* ViewModel.swift */,
 				80CF3DA327BDF90100649C7D /* TopView.swift */,
 				803B5F9F27BCAD2700973DB3 /* ContentView.swift */,
 				80F27C0128F2ECDD0019330E /* Assets.xcassets */,
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8079732429030083001EC33C /* ViewModel.swift in Sources */,
 				803B5FC827BCAD2900973DB3 /* ContentView.swift in Sources */,
 				80CF3DA427BDF90100649C7D /* TopView.swift in Sources */,
 				803B5FC627BCAD2900973DB3 /* pickSomeFlowersApp.swift in Sources */,
