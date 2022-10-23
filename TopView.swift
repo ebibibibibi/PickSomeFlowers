@@ -10,11 +10,11 @@ import SwiftUI
 struct TopView: View {
 
     @State var flowers: [Flowers]  = [
-        Flowers(flowerName: "appleFrpwer", flowerNameJ: "りんごの花"),
-        Flowers(flowerName: "CommonfieldSpeedwell", flowerNameJ: "オオイヌノフグリ"),
-        Flowers(flowerName: "WhiteClover", flowerNameJ: "クローバー")
+        Flowers(flowerName: "flower_ajisai", flowerNameJ: "あじさい"),
+        Flowers(flowerName: "flower_tullip", flowerNameJ: "チューリップ"),
+        Flowers(flowerName: "flower_asagao", flowerNameJ: "朝顔")
     ]
-    @State var currentflower: String = "appleFrpwer"
+    @State var currentflower: String = "flower_asagao"
     var body: some View {
         
 //            ScrollViewReader{proxy in

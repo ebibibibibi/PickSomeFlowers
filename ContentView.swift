@@ -16,7 +16,7 @@ struct ContentView: View {
         LotFrower(currentflowerName: "flower_tullip", isPushed: false),
         LotFrower(currentflowerName: "flower_tullip", isPushed: false)
     ]
-    var currentFlower: String = "appleFrpwer"
+    var currentFlower: String = "flower_tullip"
     
     var body: some View {
         
