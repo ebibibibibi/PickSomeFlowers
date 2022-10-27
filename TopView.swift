@@ -9,28 +9,23 @@ import SwiftUI
 
 struct TopView: View {
 
-    @State var flowers: [Flower]  = [
-        Flower(imageFileName: "flower_ajisai", flowerName: "あじさい"),
-        Flower(imageFileName: "flower_tullip", flowerName: "チューリップ"),
-        Flower(imageFileName: "flower_asagao", flowerName: "朝顔")
-    ]
-    @State var selectedFlower: String = "flower_asagao"
+    @StateObject var pickSomeFlowerViewModel: PickSomeFlowerViewModel
     var body: some View {
         
 //            ScrollViewReader{proxy in
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(flowers) {specificFlower in
-                        NavigationLink(destination: ContentView(selectedFlower: specificFlower.imageFileName)) {
+                    ForEach(pickSomeFlowerViewModel.flowers) {flower in
+                        NavigationLink(destination: ContentView(selectedFlower: flower.imageFileName)) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 30)
                                     .fill(Color.green)
                                     .frame(width: 280, height: 150)
                                     .opacity(0.15)
                                 
-                                Text(specificFlower.flowerName)
+                                Text(flower.flowerName)
                                     .bold()
                                     .position(x: 130, y: 20)
-                                Image(specificFlower.imageFileName)
+                                Image(flower.imageFileName)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 100, height: 130, alignment: .bottom)
@@ -39,11 +34,5 @@ struct TopView: View {
                 }
             }
             .navigationTitle(Text("お花を探しに行こう🌹"))
-    }
-}
-
-struct TopView_Previews: PreviewProvider {
-    static var previews: some View {
-        TopView()
     }
 }

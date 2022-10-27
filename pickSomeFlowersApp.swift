@@ -12,7 +12,7 @@ struct PickSomeFlowersApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-            TopView()
+            TopView(pickSomeFlowerViewModel: PickSomeFlowerViewModel())
             }
         }
     }

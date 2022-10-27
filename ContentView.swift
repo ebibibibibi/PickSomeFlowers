@@ -8,42 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    var array: [[String]] = []
-    @State var flowers: [LotFrower] = [
-        LotFrower(),
-        LotFrower(),
-        LotFrower(),
-        LotFrower()
-    ]
-    var selectedFlower: String = "flower_tullip"
+    @ObservedObject var pickSomeFlowerViewModel: PickSomeFlowerViewModel
+    var toppingFlowers: [ToppingFlower]
     
     var body: some View {
-        
         ZStack {
             Color.green
                 .ignoresSafeArea()
                 .opacity(0.15)
             Group {
-                ForEach(1...flowers.count, id: \.self) {flowerIndex in
-                    Image("\(selectedFlower)")
+                ForEach(toppingFlowers, id: \.self)
+                {toppingFlower in
+                    Image("\(toppingFlower.selectedFlower.imageFileName)")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 150, height: 150)
-                        .offset(x: flowers[flowerIndex - 1].x, y: flowers[flowerIndex - 1].y)
-                        .opacity(flowers[flowerIndex - 1].isPushed ? 0 : 1 )
+                        .offset(x: toppingFlower.randomFrowerPostions[0], y: toppingFlower.randomFrowerPostions[1])
+                        .opacity(toppingFlower.isPushed ? 0 : 1 )
                         .onTapGesture {
-                            print("\(flowerIndex)つ目の花を消しました。")
-                            flowers[flowerIndex - 1].isPushed = true
+                            print("花を消しました。")
+                            toppingFlower.isPushed.toggle()
                         }
                 }
             }
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
