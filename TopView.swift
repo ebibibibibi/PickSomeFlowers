@@ -12,10 +12,9 @@ struct TopView: View {
     @StateObject var pickSomeFlowerViewModel: PickSomeFlowerViewModel
     var body: some View {
         
-//            ScrollViewReader{proxy in
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(pickSomeFlowerViewModel.flowers) {flower in
-                        NavigationLink(destination: ContentView(selectedFlower: flower.imageFileName)) {
+                        NavigationLink(destination: ContentView(pickSomeFlowerViewModel: pickSomeFlowerViewModel)) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 30)
                                     .fill(Color.green)

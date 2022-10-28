@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var pickSomeFlowerViewModel: PickSomeFlowerViewModel
-    var toppingFlowers: [ToppingFlower]
     
     var body: some View {
         ZStack {
@@ -17,20 +16,22 @@ struct ContentView: View {
                 .ignoresSafeArea()
                 .opacity(0.15)
             Group {
-                ForEach(toppingFlowers, id: \.self)
-                {toppingFlower in
+                ForEach(pickSomeFlowerViewModel.toppingFlowers, id: \.id) {
+                    toppingFlower in
                     Image("\(toppingFlower.selectedFlower.imageFileName)")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 150, height: 150)
-                        .offset(x: toppingFlower.randomFrowerPostions[0], y: toppingFlower.randomFrowerPostions[1])
                         .opacity(toppingFlower.isPushed ? 0 : 1 )
                         .onTapGesture {
-                            print("花を消しました。")
+                            print("花を摘みました。")
                             toppingFlower.isPushed.toggle()
                         }
                 }
             }
+        }
+        .onAppear(){
+            pickSomeFlowerViewModel.makeToppingFlowers(flower: pickSomeFlowerViewModel.selectedFlower)
         }
     }
 }

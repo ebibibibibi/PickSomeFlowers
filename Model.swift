@@ -13,9 +13,9 @@ struct Flower: Identifiable {
     var flowerName: String
 }
 
-struct ToppingFlower: Identifiable {
-    var id = UUID().uuidString
-    var selectedFlower: Flower = Flower(imageFileName: "flower_ajisai", flowerName: "あじさい")
-    var isPushed: Bool = false
-    var randomFrowerPostions: [CGFloat] = []
-}
+//struct ToppingFlower: Identifiable {
+//    var id = UUID().uuidString
+//    var selectedFlower: Flower = Flower(imageFileName: "flower_ajisai", flowerName: "あじさい")
+//    var isPushed: Bool = false
+//    var randomFrowerPostions: [CGFloat] = []
+//}
